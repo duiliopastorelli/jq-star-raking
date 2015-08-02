@@ -9,15 +9,29 @@
 </head>
 
 <body>
-
+	<h1>Test page</h1>
+	<h2>Default container (.jq-star.container)</h2>
 	<div class="jq-star-container"></div>
+
+	<h2>Custom container (#star-container)</h2>
+	<div id="star-container"></div>
 
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/script.js"></script>
-	<script>$.fn.jqStarRanking({
-		starNumber: 8,
-		color:"blue",
-		fontSize:"54px"
-	});</script>
+	<script>
+		$.fn.jqStarRanking({
+			starNumber: 8,
+			color:"blue",
+			size: 54
+		});
+	</script>
+	<script>
+	$.fn.jqStarRanking({
+		container: "#star-container",
+		starNumber: 4,
+		color:"red",
+		size: 38
+	});
+	</script>
 </body>
 </html>
