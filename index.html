@@ -1,20 +1,23 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>JavaScript tests</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>JQuery Star Ranking</title>
+	<link rel="stylesheet" type="text/css" href="css/star-ranking-style.css">
+	<!--[if lt IE 8]><!-->
+		<link rel="stylesheet" href="css/star-ranking-ie7-style.css">
+	<!--<![endif]-->
 </head>
 
 <body>
-	<div class="star-raking">
-		<img src="img/unstaricon.png" alt="Star">
-		<img src="img/unstaricon.png" alt="Star">
-		<img src="img/unstaricon.png" alt="Star">
-		<img src="img/unstaricon.png" alt="Star">
-		<img src="img/unstaricon.png" alt="Star">
-	</div>
+
+	<div class="jq-star-container"></div>
 
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/script.js"></script>
+	<script>$.fn.jqStarRanking({
+		starNumber: 8,
+		color:"blue",
+		fontSize:"54px"
+	});</script>
 </body>
 </html>
